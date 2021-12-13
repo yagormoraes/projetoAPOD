@@ -5,10 +5,13 @@
 }
 
 body{
-	background-color: gray;
+	background: url("./imgs/symbol-scatter-haikei.svg");
+	background-repeat:no-repeat ;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 header{
@@ -21,21 +24,38 @@ header{
 
 }
 
-.headerText{
-	color: tomato
+.headerPrincipal{
+	font-size: 2rem;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
 }
 
-.headerPlus{
-	color: blue
+.headerText{
+	background-color: white;
+    color: black;
+    padding: 5px;
+	transition: 1s;
 }
+
+.headerText:hover{
+	transform: scale(1.2);
+}
+
+.headerDiv{
+	width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 main{
 	width: 100vw;
-	height: 100vh;
+	height: 105vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
 }
 
 .mainTexts{
@@ -43,20 +63,65 @@ main{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+	text-align: center;
+	width: 250px;
+	height: 200px;
+	border: 5px black solid;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding:8px 5px;
+	background-color: white;
+}
+
+.dateText{
+	margin-top: 5px;
+}
+
+.botaoGerador{
+	margin-top: 10px;
+	width:150px ;
+	height: 25px ;
+	border-radius: 15px;
+	transition:1.5s ;
+}
+
+.botaoGerador:hover{
+	background-color: black;
+	color: white;
 }
 
 .mainAPI{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content:space-evenly;
+	width: 600px;
+	height: 500px;
+	border: 5px rgb(68, 58, 58) solid;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color:white ;
+
+
+}
+
+.tituloAPI{
+	text-align: center;
+	margin-bottom: 5px;
 }
 
 .imgAPI{
-	display: none;
 	width: 200px;
 	height: 200px;
 }
+
+.explanationAPI{
+	font-size: 13px;
+}
+
 
 footer{
 	background-color: black;

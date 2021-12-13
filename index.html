@@ -10,16 +10,26 @@
 </head>
 <body>
     <header>
-        <p class="headerText">APOD Clone</p>
-        <p class="headerPlus">colocar lista aqui com linkdin, github e email denovo</p>
+        <p class="headerPrincipal">APOD Clone</p>
+        <div class="headerDiv">
+            <p class="headerText"><a href="mailto:yago.dmoraes@gmail.com"><img src="./icons/o-email.png"></a></p>
+            <p class="headerText"><a href="https://www.linkedin.com/in/yagordmoraes/"><img src="./icons/logotipo-do-linkedin.png"></a></p>
+            <p class="headerText"><a href="https://github.com/yagormorares"><img src="./icons/github.png"></a></p>
+        </div>
+
     </header>
 
     <main>
         <div class="mainTexts">
-            <h1>APOD Clone</h1>
-            <p>Site </p>
-            <label for="dateInput">Selecione uma data:</label>
+            <p>Site onde é possivel colocar qualquer data até o dia de agora e terá uma foto do espaço sobre o mesmo dia.</p>
+            <label for="dateInput" class="dateText">Selecione uma data:</label>
             <input type="date" name="dateInput" id="dateInput">
+            <label>Escolha a lingua de seu interesse:</label>
+            <select id="selectLanguage" name="selectLanguage">
+                <option value="noLanguage">   </option>
+                <option value="ing">Inglês</option>
+                <option value="ptbr">Português</option>
+            </select>
         </div>
 
         <button class="botaoGerador">Gerar Imagem</button>
@@ -34,7 +44,8 @@
     </main>
 
     <footer>
-        <p class="footerText">rodapé massa</p>
+        <p class="footerText">Project by Yago R. de Moraes</p><br>
+        <p class="footerText"> Direitos Autoriais &copy; - Para fins educacionais</p>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

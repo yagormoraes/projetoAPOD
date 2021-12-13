@@ -14,6 +14,8 @@ $(".botaoGerador").click(function(){
             let hdurl = response["hdurl"]
             let explanation = response["explanation"]
             
+            $(".mainAPI").show()
+            $(".mainAPI").css('display','flex')
             $(".tituloAPI").text(title)
             $(".dataAPI").text(date)
             $(".imgAPI").attr("src",hdurl)

@@ -16,12 +16,17 @@ $(".botaoGerador").click(function(){
             
             $(".mainAPI").show()
             $(".mainAPI").css('display','flex')
+
             $(".tituloAPI").text(title)
             $(".dataAPI").text(date)
+
             $(".imgAPI").attr("src",hdurl)
             $(".imgAPI").show()
+
+            $(".lightboxAPI").attr("src",hdurl)
+            $(".lightboxAPI").show()
+
             $(".explanationAPI").text(explanation)
-            console.log(APIdata)
         },
         error:function(erro) {
             console.log(erro)

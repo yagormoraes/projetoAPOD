@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <div class="bodyBg"></div>
+
     <header>
         <p class="headerPrincipal">APOD Clone</p>
         <div class="headerDiv">
@@ -22,16 +22,14 @@
     </header>
 
     <main>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        
         <div class="mainTexts">
             <p>Site onde é possivel colocar qualquer data até o dia de agora e terá uma foto do espaço sobre o mesmo dia.</p>
             <label for="dateInput" class="dateText">Selecione uma data:</label>
             <input type="date" name="dateInput" id="dateInput">
-            <label>Escolha a lingua de seu interesse:</label>
-            <select id="selectLanguage" name="selectLanguage">
-                <option value="noLanguage">   </option>
-                <option value="ing">Inglês</option>
-                <option value="ptbr">Português</option>
-            </select>
         </div>
 
         <button class="botaoGerador">Gerar Imagem</button>
@@ -43,7 +41,6 @@
             <a href="#imgInput">
                 <img class="imgAPI"  src="">
             </a>
-            
             <a href="#_" class="lightBox" id="imgInput">
                 <img class="lightboxAPI"  src="">
             </a>

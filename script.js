@@ -12,6 +12,7 @@ $(".botaoGerador").click(function(){
             let title = response["title"]
             let date = response["date"]
             let hdurl = response["hdurl"]
+            let url = response["url"]
             let explanation = response["explanation"]
             
             $(".mainAPI").show()
@@ -19,9 +20,18 @@ $(".botaoGerador").click(function(){
 
             $(".tituloAPI").text(title)
             $(".dataAPI").text(date)
-
-            $(".imgAPI").attr("src",hdurl)
-            $(".imgAPI").show()
+            
+            if(response.media_type == "image"){
+                $(".imgAPI").attr("src",hdurl)
+                $(".imgAPI").show()
+                $(".videoAPI").hide()
+            }else{
+                $(".videoAPI").attr("src",url)
+                $(".videoAPI").css("display","block")
+                $(".videoAPI").show()
+                $(".imgAPI").hide()
+            }
+            
 
             $(".lightboxAPI").attr("src",hdurl)
             $(".lightboxAPI").show()

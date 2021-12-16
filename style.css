@@ -387,6 +387,12 @@ main{
 	height: 200px;
 }
 
+.videoAPI{
+	width: 400px;
+	height: 200px;
+    display: none;
+}
+
 .lightBox{
 	display: none;
 	position: fixed;
@@ -444,6 +450,11 @@ footer{
 
     .imgAPI{
         width: 100px;
+        height: 100px;
+    }
+
+    .videoAPI{
+        width: 200px;
         height: 100px;
     }
 
